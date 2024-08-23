@@ -4,13 +4,11 @@
 import pygame
 from constants import *
 
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+# screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
 def main():
      pygame.init()
-     print( "Starting asteroids!")
-     print(f"Screen width: {SCREEN_WIDTH}")
-     print(f"Screen heigh: {SCREEN_HEIGHT}")
+     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
      while True:
             for event in pygame.event.get():
